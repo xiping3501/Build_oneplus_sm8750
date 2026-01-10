@@ -360,7 +360,6 @@ jobs:
       - name: 🔧 Set gki_defconfig (设置编译配置) 
         run: |
           cd kernel_workspace
-          echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_USB_SERIAL=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_USB_SERIAL_CP210X=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_USB_SERIAL_PL2303=y" >> ./common/arch/arm64/configs/gki_defconfig
@@ -368,6 +367,7 @@ jobs:
           echo "CONFIG_MODULE_SIG=n" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_MODULE_SIG_FORCE=n" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_MODULE_SIG_ALL=n" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CRYPTO_LZ4=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CRYPTO_LZ4HC=y" >> ./common/arch/arm64/configs/gki_defconfig
