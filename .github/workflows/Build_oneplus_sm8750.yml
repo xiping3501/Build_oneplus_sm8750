@@ -364,6 +364,15 @@ jobs:
           echo "CONFIG_USB_SERIAL_CP210X=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_USB_SERIAL_PL2303=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_USB_SERIAL_CH341=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM_ARM_HOST=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM_ARM_VGIC_V3=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM_ARM_VGIC_V2M=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM_ARM_TIMER=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_VIRTIO=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_VIRTIO_PCI=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_VIRTIO_MMIO=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_VIRTIO_BLK=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CRYPTO_LZ4=y" >> ./common/arch/arm64/configs/gki_defconfig
