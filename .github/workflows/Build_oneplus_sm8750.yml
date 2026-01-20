@@ -373,7 +373,6 @@ jobs:
           echo "CONFIG_VIRTIO_PCI=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_VIRTIO_MMIO=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_VIRTIO_BLK=y" >> ./common/arch/arm64/configs/gki_defconfig
-          echo "CONFIG_HYPERVISOR_GUEST=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_PGTABLE_LEVELS=4" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
