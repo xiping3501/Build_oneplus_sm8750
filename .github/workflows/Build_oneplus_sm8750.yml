@@ -378,6 +378,15 @@ jobs:
           echo "CONFIG_QCOM_WCNSS_QMI=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CFG80211=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_MAC80211=y" >> ./common/arch/arm64/configs/gki_defconfig
+          # 在原KVM+Wi‑Fi+KSU配置后追加以下
+          echo "CONFIG_INET=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_IPV6=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_DHCP=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_DNS_RESOLVER=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_NETFILTER=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_NETFILTER_XT_MATCH_CONNTRACK=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_IP_ROUTE=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_IP_PNP=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CRYPTO_LZ4=y" >> ./common/arch/arm64/configs/gki_defconfig
