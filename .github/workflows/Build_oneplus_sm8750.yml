@@ -369,6 +369,7 @@ jobs:
           echo "CONFIG_KVM_ARM_VGIC_V3=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KVM_ARM_VGIC_V2M=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KVM_ARM_TIMER=y" >> ./common/arch/arm64/configs/gki_defconfig
+          echo "CONFIG_KVM_GUEST=n" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KSU=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_KPM=y" >> ./common/arch/arm64/configs/gki_defconfig
           echo "CONFIG_CRYPTO_LZ4=y" >> ./common/arch/arm64/configs/gki_defconfig
